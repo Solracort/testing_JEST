@@ -6,7 +6,7 @@ let oneEuroIs = {
 };
 
 function fromDollarToYen(dollar)
-    {return(((dollar/oneEuroIs.USD)*oneEuroIs.JPY).toFixed(2))};
+    {return(((dollar/oneEuroIs.USD).toFixed(2)*oneEuroIs.JPY))};
 const fromEuroToDollar = function(euro){
     let valor = euro * oneEuroIs.USD;
     
